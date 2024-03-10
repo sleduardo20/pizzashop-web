@@ -18,8 +18,6 @@ export function SignIn() {
   const methods = useForm<SignInForm>();
 
   async function handleSignIn(data: SignInForm) {
-    console.log(data);
-
     try {
       await new Promise(resolve => setTimeout(resolve, 2000));
       toast.success('Eviamos um link de autenticacao para seu e-mail.', {

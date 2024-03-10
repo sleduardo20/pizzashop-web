@@ -22,8 +22,6 @@ export function SignUp() {
   const methods = useForm<SignUpForm>();
 
   async function handleSignUp(data: SignUpForm) {
-    console.log(data);
-
     try {
       await new Promise(resolve => setTimeout(resolve, 2000));
       toast.success('Restaurante cadastrado com sucesso.', {
